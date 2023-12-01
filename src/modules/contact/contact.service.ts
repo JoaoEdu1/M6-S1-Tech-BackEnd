@@ -45,4 +45,30 @@ export class ContactsService {
     const contacts = await this.prisma.contact.findMany();
     return contacts;
   }
+
+  async update(id: string, updateContactDto: UpdateContactDto) {
+    const contact = await this.prisma.contact.findUnique({
+      where: { id },
+    });
+    if (!contact) {
+      throw new NotFoundException('Contact not found');
+    }
+
+    const updatedContact = await this.prisma.contact.update({
+      where: { id },
+      data: { ...updateContactDto },
+    });
+
+    return plainToInstance(Contact, updatedContact);
+  }
+
+  async remove(id: string) {
+    const contact = await this.prisma.contact.findUnique({
+      where: { id },
+    });
+    if (!contact) {
+      throw new NotFoundException('Contact not found');
+    }
+    await this.prisma.contact.delete({ where: { id } });
+  }
 }
