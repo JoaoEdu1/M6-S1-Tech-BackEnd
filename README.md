@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Criar um cadastro de clientes que poderá conter muitos contatos associados. Depois deste processo deverá ter um relatório em tela, ou PDF que mostre dados do cliente e os contatos vinculados a este cliente.
 
 ## Installation
 
@@ -45,17 +45,10 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
+## Swagger
 
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
+```link
+http://localhost:3000/api
 ```
 
 ## Support
