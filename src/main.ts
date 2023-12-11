@@ -10,8 +10,10 @@ async function bootstrap() {
     new ValidationPipe({transform: true, transformOptions: {groups: ["transform"]}})
     )
     const config = new DocumentBuilder()
-    .setTitle('Tech app')
-    .setDescription('add a new contact')
+    .setTitle('CadastrAí')
+    .setDescription(
+      'Criar um cadastro de clientes que poderá conter muitos contatos associados.',
+    )
     .setVersion('1.0')
     .addBearerAuth()
     .build();
