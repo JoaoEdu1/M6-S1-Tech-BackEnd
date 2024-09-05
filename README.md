@@ -24,7 +24,7 @@
 
 ## Description
 
-Criar um cadastro de clientes que poderá conter muitos contatos associados. Depois deste processo deverá ter um relatório em tela, ou PDF que mostre dados do cliente e os contatos vinculados a este cliente.
+Create a list of customers who can talk about many of their associated contacts. After this process you should have a report on screen, or PDF that shows customer data and the contacts related to that customer.
 
 ## Installation
 
